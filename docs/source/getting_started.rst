@@ -58,9 +58,10 @@ Boot Process
 Here are some key points about the boot process of the Charge Control C:
 
 - The file system basically consists of three ext4 partitions. Two partitions are used as slots for
-  the RAUC update process. The third partition is not touched by the RAUC update process and is usually
-  used for storing update bundles, logs, etc. For more information about the firmware in general,
-  firmware updates and the partition layout, see the :ref:`firmware.rst` chapter.
+  the `RAUC<https://rauc.io/>`_ update process. The third partition is not touched by the RAUC
+  update process and is usually used for storing update bundles, logs, etc. For more information
+  about the firmware in general, firmware updates and the partition layout, see the :ref:`firmware.rst`
+  chapter.
 - After connecting the Charge Control C to the power supply, the U-Boot bootloader starts the
   currently active slot managed by RAUC.
 - The LED status indicators on the Charge Control C provide information about the current status of
